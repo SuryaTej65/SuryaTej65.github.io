@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function calc() {
+            let num1 = Number(txtname1.value);
+            let num2 = Number(txtname2.value);
+ 
+            dvadd.innerHTML = num1 + " + " + num2 + " = " + (num1 + num2);
+   
+            dvsub.innerHTML = num1 + " - " + num2 + " = " + (num1 - num2);
+   
+            dvmul.innerHTML = num1 + " * " + num2 + " = " + (num1 * num2);
+   
+            dvdiv.innerHTML = num1 + " / " + num2 + " = " + (num1 / num2);
+        }
+    </script>
+</head>
+<body>
+    
+    <h1>Calculator</h1>
+    <input type="text" id="txtname1">
+    <input type="text" id="txtname2">
+    <button onclick="calc()">Calculator</button>
+
+    <div>
+        Addition: <p id="dvadd"></p>
+        Subtraction: <p id="dvsub"></p>
+        Multiply: <p id="dvmul"></p>
+        Division: <p id="dvdiv"></p>
+    </div>
+</body>
+</html>
