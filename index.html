@@ -20,7 +20,34 @@
     <li><a href="a3/index.html">Assignment 3</a></li>
     <li><a href="a4/index.html">Assignment 4</a></li>
     <li><a href="a5/index.html">Assignment 5</a></li>
+    <li><a href="a6/index.html">Assignment 6</a></li>
 
 </ol>
+<script>
+
+const score = [14,23,45]
+score.map((num)=> console.log(num))
+
+// const number = score.map((num)=> num)
+// console.log(number)
+
+// const number = score.filter((e)=> e>14)
+// console.log(number)
+
+//gives sum where initial sum is 0 and e is added and value stored
+// in the number variable sum+e is the direction on what to do
+const number = score.reduce((sum,e)=> sum+e)
+console.log(number)
+
+const add = (...args) => {
+const total = args.reduce((sum,e)=> sum + e);
+return total;
+
+}
+
+const result = add(3,4,5,6)
+console.log(result)
+
+</script>
 </body>
 </html>

@@ -1,7 +1,9 @@
 .App-Container{
     margin: auto;
     padding: 10px;
-    border: 1px solid gray;
+    font-family: cursive;
+    border: 1px solid rgb(235, 7, 7);
     border-radius: 10px;
     width: 500px;
+    background-color: aqua;
 }

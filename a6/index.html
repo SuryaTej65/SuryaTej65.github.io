@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+</head>
+<body>
+    <h1>Fruit List</h1>
+<div>
+<input type="text" id="t1"> 
+<button onclick="display()">ADD</button></div>
+<div style="display: block;">
+    <p id="dvname"></p>
+</div>
+
+<script>
+     const arr = []
+
+    function display() {
+    let name = t1.value;
+    dvname.innerHTML = name;
+    arr.push(name)
+
+    
+        const list = arr.map(fruit => `<li>${fruit}</li>`).join("");
+        document.getElementById("dvname").innerHTML = `<ul>${list}</ul>`;
+    }
+
+
+</script>
+</body>
+</html>

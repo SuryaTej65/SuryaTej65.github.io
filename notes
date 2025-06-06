@@ -1,0 +1,21 @@
+// Used to iterate thro each value in array,  can also use map instead of foreach here
+Fruits.foreach((fruit)  => console.log(fruit));
+
+
+
+// this maps older values into newArray with same values
+const newArray = fruits.map((value) => value);
+return fruit
+
+// can also use
+const newArray = fruits.map((value) => fruit);
+console.log(newArray)
+
+// when filter is used instead of map   we use and it checks
+    => fruit==="apple");
+
+// if fine is used instead of filter then it just displays apple but it doesnt diwplay it inside an array meaning others display in array
+// like [apple] but fine displays only one value and if asked display e>2
+// it displays only the next immediate ans
+
+const score = [14,23,45]
